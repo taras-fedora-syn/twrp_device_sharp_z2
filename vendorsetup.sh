@@ -21,6 +21,6 @@
 # function: add_lunch_combo generic-eng
 
 for var in eng user userdebug; do
-  add_lunch_combo full_sharp_z2-$var
+  add_lunch_combo sharp_z2-$var
 done
 
