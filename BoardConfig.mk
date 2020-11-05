@@ -1,26 +1,6 @@
 # mt6797 platform boardconfig
 LOCAL_PATH := device/sharp/sharp_z2
 
-# Device board elements
-include $(LOCAL_PATH)/board/*.mk
-
-# Disable memcpy opt (for audio libraries)
-TARGET_CPU_MEMCPY_OPT_DISABLE := true
-
-USE_CAMERA_STUB := true
-
-# EGL
-BOARD_EGL_CFG := $(LOCAL_PATH)/configs/egl.cfg
-USE_OPENGL_RENDERER := true
-BOARD_EGL_WORKAROUND_BUG_10194508 := true
-
-# Flags
-BOARD_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
-TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
-
-# Fonts
-EXTENDED_FONT_FOOTPRINT := true
-
 # Platform
 TARGET_BOARD_PLATFORM := mt6797
 TARGET_NO_BOOTLOADER := true
@@ -123,17 +103,7 @@ TW_EXCLUDE_SUPERSU := true
 #TW_NO_EXFAT_FUSE := true
 #TWHAVE_SELINUX := true
 
-# Include
-TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
-
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
-
-# SELinux
-BOARD_SEPOLICY_DIRS := \
-       $(LOCAL_PATH)/sepolicy
-
-# Seccomp filter
-BOARD_SECCOMP_POLICY := $(LOCAL_PATH)/seccomp
 
 # Kernel OBJ WorkAround for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
