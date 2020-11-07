@@ -111,7 +111,7 @@ TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata"
 TW_CRYPTO_MNT_POINT := "/data"
 TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
-TW_USE_TOOLBOX := false
+TW_USE_TOOLBOX := true
 else
 
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
