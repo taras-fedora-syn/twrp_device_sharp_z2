@@ -1,2 +1,8 @@
 [
+  {
+    "remote":"github",
+    "repository": "taras-fedora-syn/twrp_device_sharp_z2",
+    "target_path": "device/sharp/sharp_z2",
+    "revision":"android-8.1"
+  }
 ]
