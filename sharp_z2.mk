@@ -1,7 +1,5 @@
 LOCAL_PATH := device/sharp/sharp_z2
 
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
-
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	                                                                                 LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
