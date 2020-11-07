@@ -115,6 +115,3 @@ TW_USE_TOOLBOX := false
 else
 
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
-
-# Kernel OBJ WorkAround for build
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
