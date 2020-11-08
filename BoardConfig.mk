@@ -99,6 +99,7 @@ TW_NO_EXFAT_FUSE := true
 TW_NO_EXFAT := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_DEVICE_VERSION := taras-fedora-syn
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 #cofface config
 RECOVERY_VARIANT := twrp
