@@ -90,6 +90,7 @@ TW_THEME := portrait_hdpi
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
+TW_NEVER_UNMOUNT_SYSTEM := true
 TW_INTERNAL_STORAGE_PATH := "/data/media/0"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
@@ -97,6 +98,7 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_NO_EXFAT_FUSE := true
 TW_NO_EXFAT := true
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_DEVICE_VERSION := taras-fedora-syn
 
 #cofface config
 RECOVERY_VARIANT := twrp
@@ -106,6 +108,7 @@ BOARD_DISABLE_BOOT_VERIFY := true
 
 # Encryption
 TW_INCLUDE_CRYPTO := true
+TARGET_HW_DISK_ENCRYPTION := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
 TW_CRYPTO_MNT_POINT := "/data"
