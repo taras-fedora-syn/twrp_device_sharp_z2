@@ -1,5 +1,5 @@
 #
-# Copyright 2017 The Android Open Source Project
+# Copyright 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +15,18 @@
 #
 #device_path
 LOCAL_PATH := device/sharp/sharp_z2
+
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+PRODUCT_COPY_FILES += \
+    device/sharp/sharp_z2/recovery/root/etc/recovery.fstab:recovery/root/etc/recovery.fstab
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sharp_z2
