@@ -7,8 +7,8 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/kernel:kernel \
-$(LOCAL_PATH)/recovery.fstab:root/recovery.fstab
+$(LOCAL_PATH)/kernel:Image.gz \
+$(LOCAL_PATH)/recovery.fstab:root/etc/recovery.fstab
 
 $(call inherit-product, build/target/product/full.mk)
 
