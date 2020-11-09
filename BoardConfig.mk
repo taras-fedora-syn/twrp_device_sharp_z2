@@ -105,12 +105,10 @@ TW_H_OFFSET := -160
 #use toolbox
 TW_USE_TOOLBOX := true
 
-#Crypto related
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+# Encryption
 TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
-TARGET_USE_UFS_ICE := true
 TARGET_HW_DISK_ENCRYPTION := true
-LEGACY_HW_DISK_ENCRYPTION := true
-TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd servicemanager hwservicemanager keymaster-3-0
-TW_CRYPTO_SYSTEM_VOLD_MOUNT := firmware persist-lg system
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
