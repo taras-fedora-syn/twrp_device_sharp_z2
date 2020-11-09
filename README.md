@@ -23,6 +23,6 @@
 
 >. build/envsetup.sh
 
->lunch omni_sharp_z2_userdebug
+>lunch omni_sharp_z2-userdebug
 
 >make recoveryimage
