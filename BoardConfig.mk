@@ -68,7 +68,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/device/sharp/sharp_z2/recovery/root/etc/
 # TWRP specific build flags
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_THEME := portrait_hdpi
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
@@ -88,19 +87,6 @@ TW_HAVE_SELINUX := true
 TW_DEFAULT_LANGUAGE := en
 TW_HAS_MTP := true
 TW_MTP_DEVICE := /dev/mtp_usb
-TW_MAX_BRIGHTNESS := 255
-TW_DEFAULT_BRIGHTNESS := 149
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_INCLUDE_NTFS_3G := true
-TW_NO_EXFAT_FUSE := true
-
-# We can use the factory reset button combo to enter recovery safely
-TW_IGNORE_MISC_WIPE_DATA := true
-#TW_OEM_BUILD := true
-
-# Shift TWRP off the secondary screen
-TW_Y_OFFSET := 160
-TW_H_OFFSET := -160
 
 #use toolbox
 TW_USE_TOOLBOX := true
