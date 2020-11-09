@@ -11,3 +11,5 @@ $(LOCAL_PATH)/kernel:kernel \
 $(LOCAL_PATH)/recovery.fstab:root/recovery.fstab
 
 $(call inherit-product, build/target/product/full.mk)
+
+PRODUCT_NAME := sharp_z2
