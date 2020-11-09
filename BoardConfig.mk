@@ -10,24 +10,11 @@ TARGET_NO_FACTORYIMAGE := true
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
-# Device haves a combination of cortex a72 + cortex a53
-#2x Cortex-A72 @ 2.1GHz ~ 2.3GHz
-#4x Cortex-A53 @ 1.85GHz
-#4x Cortex-A53 @ 1.4GHz
 TARGET_CPU_SMP := true
-
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
-
 TARGET_CPU_CORTEX_A53 := true
-
 TARGET_BOOTLOADER_BOARD_NAME := mt6797
 
 # Kernel
@@ -37,7 +24,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --base 0x40078000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000 --board 0001_1_360
-TARGET_PREBUILT_KERNEL := device/sharp/sharp_z2/prebuilt/Image.gz
+TARGET_KERNEL_SOURCE := kernel/sharp/sharp_z2
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := mad_val_n1_defconfig
@@ -47,6 +34,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 LZMA_RAMDISK_TARGETS := boot,recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 BOARD_USES_MTK_HARDWARE := true
+
+TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image.gz
 
 # DISABLED BUILD NINJA
 USE_NINJA := false
@@ -60,8 +49,10 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 452984832
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 4096
 
+# File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
 
 # Display
 TARGET_SCREEN_HEIGHT := 1920
@@ -77,6 +68,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/device/sharp/sharp_z2/recovery/root/etc/
 # TWRP specific build flags
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_THEME := portrait_hdpi
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
@@ -96,14 +88,30 @@ TW_HAVE_SELINUX := true
 TW_DEFAULT_LANGUAGE := en
 TW_HAS_MTP := true
 TW_MTP_DEVICE := /dev/mtp_usb
+TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 149
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_INCLUDE_NTFS_3G := true
+TW_NO_EXFAT_FUSE := true
+TARGET_RECOVERY_DEVICE_MODULES := libcryptfs_hw #twrpdec #strace
+
+# We can use the factory reset button combo to enter recovery safely
+TW_IGNORE_MISC_WIPE_DATA := true
+#TW_OEM_BUILD := true
+
+# Shift TWRP off the secondary screen
+TW_Y_OFFSET := 160
+TW_H_OFFSET := -160
 
 #use toolbox
 TW_USE_TOOLBOX := true
 
-# Encryption
+#Crypto related
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TARGET_USE_UFS_ICE := true
 TARGET_HW_DISK_ENCRYPTION := true
-TW_CRYPTO_FS_TYPE := "ext4"
-TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
-TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
+LEGACY_HW_DISK_ENCRYPTION := true
+TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd servicemanager hwservicemanager keymaster-3-0
+TW_CRYPTO_SYSTEM_VOLD_MOUNT := firmware persist-lg system
