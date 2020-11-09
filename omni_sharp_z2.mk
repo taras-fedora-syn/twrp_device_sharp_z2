@@ -27,8 +27,7 @@ PRODUCT_MANUFACTURER := Sharp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.mt6797.rc:root/init.recovery.mt6797.rc \
     $(LOCAL_PATH)/recovery/root/init.mt6797.usb.rc:root/init.mt6797.usb.rc \
-    $(LOCAL_PATH)/recovery/root/ueventd.mt6797.rc:root/ueventd.mt6797.rc \
-    $(LOCAL_PATH)/recovery/root/sbin/unzip:root/sbin/unzip
-
+    $(LOCAL_PATH)/recovery/root/ueventd.mt6797.rc:root/ueventd.mt6797.rc
+    
 #Allow_missing_dependencies
 ALLOW_MISSING_DEPENDENCIES=true
