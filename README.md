@@ -1,5 +1,7 @@
 # TWRP tree for SHARP Z2
 
+>git config --global user.name "you name" && git config --global user.email 
+
 >repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
 
 >repo sync -j16
