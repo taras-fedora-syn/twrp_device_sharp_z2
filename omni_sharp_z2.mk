@@ -28,6 +28,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/root/init.recovery.mt6797.rc:root/init.recovery.mt6797.rc \
     $(LOCAL_PATH)/root/init.mt6797.usb.rc:root/init.mt6797.usb.rc \
     $(LOCAL_PATH)/root/ueventd.mt6797.rc:root/ueventd.mt6797.rc
-    
-#Allow_missing_dependencies
-ALLOW_MISSING_DEPENDENCIES=true
