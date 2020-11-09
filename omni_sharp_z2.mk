@@ -25,6 +25,6 @@ PRODUCT_MANUFACTURER := Sharp
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/root/init.recovery.mt6797.rc:root/init.recovery.mt6797.rc \
-    $(LOCAL_PATH)/root/init.mt6797.usb.rc:root/init.mt6797.usb.rc \
-    $(LOCAL_PATH)/root/ueventd.mt6797.rc:root/ueventd.mt6797.rc
+    $(LOCAL_PATH)/omni/device/sharp/sharp_z2/recovery/root/init.recovery.mt6797.rc:root/init.recovery.mt6797.rc \
+    $(LOCAL_PATH)/omni/device/sharp/sharp_z2/recovery/root/init.mt6797.usb.rc:root/init.mt6797.usb.rc \
+    $(LOCAL_PATH)/omni/device/sharp/sharp_z2/recovery/root/ueventd.mt6797.rc:root/ueventd.mt6797.rc
