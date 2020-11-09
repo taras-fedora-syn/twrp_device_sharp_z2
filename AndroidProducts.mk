@@ -14,5 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/sharp_z2.mk \
     $(LOCAL_DIR)/omni_sharp_z2.mk
