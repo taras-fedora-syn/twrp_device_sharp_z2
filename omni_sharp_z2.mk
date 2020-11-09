@@ -19,9 +19,6 @@ LOCAL_PATH := device/sharp/sharp_z2
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/sharp/sharp_z2/sharp_z2.mk)
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sharp_z2
 PRODUCT_NAME := omni_sharp_z2
