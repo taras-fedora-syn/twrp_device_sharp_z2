@@ -6,6 +6,10 @@
 
 >repo sync -j16
 
+>~/omni/frameworks$ zip native native
+
+>rm -rf native
+
 >git clone https://github.com/taras-fedora-syn/twrp_device_sharp_z2.git --single-branch device/sharp/sharp_z2
 
 >export USE_NINJA=false
