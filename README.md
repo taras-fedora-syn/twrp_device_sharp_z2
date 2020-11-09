@@ -21,6 +21,8 @@
 
 >export USE_NINJA=false
 
+>export ALLOW_MISSING_DEPENDENCIES=true
+
 >. build/envsetup.sh
 
 >lunch omni_sharp_z2-userdebug
