@@ -89,12 +89,13 @@ TW_NO_EXFAT := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_DEVICE_VERSION := taras-fedora-syn
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_HAVE_SELINUX := true
+TW_DEFAULT_LANGUAGE := en
+TW_HAS_MTP := true
+TW_MTP_DEVICE := /dev/mtp_usb
 
-#cofface config
-RECOVERY_VARIANT := twrp
-TW_EXTRA_LANGUAGES := true
-TW_DEFAULT_LANGUAGE := en_US
-BOARD_DISABLE_BOOT_VERIFY := true
+#use toolbox
+TW_USE_TOOLBOX := true
 
 # Encryption
 TW_INCLUDE_CRYPTO := true
