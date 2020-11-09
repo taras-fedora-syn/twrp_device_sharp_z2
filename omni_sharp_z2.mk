@@ -10,8 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
-PRODUCT_COPY_FILES += \
-    device/sharp/sharp_z2/recovery/root/etc/recovery.fstab:recovery/root/etc/recovery.fstab
+PRODUCT_COPY_FILES += device/sharp/sharp_z2/recovery/root/etc/recovery.fstab:recovery/root/etc/recovery.fstab
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sharp_z2
