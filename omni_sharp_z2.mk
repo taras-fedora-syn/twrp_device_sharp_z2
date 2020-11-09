@@ -27,7 +27,6 @@ PRODUCT_NAME := omni_sharp_z2
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.mt6797.rc:root/init.recovery.mt6797.rc \
-    $(LOCAL_PATH)/recovery/root/init.recovery.service.rc:root/init.recovery.service.rc \
     $(LOCAL_PATH)/recovery/root/init.mt6797.usb.rc:root/init.mt6797.usb.rc \
     $(LOCAL_PATH)/recovery/root/ueventd.mt6797.rc:root/ueventd.mt6797.rc \
     $(LOCAL_PATH)/recovery/root/sbin/unzip:root/sbin/unzip
