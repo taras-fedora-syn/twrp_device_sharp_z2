@@ -69,7 +69,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/home/fedirpolishchuk/omni/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/omni/device/sharp/sharp_z2/recovery/root/etc/recovery.fstab
 
 # TWRP specific build flags
 BOARD_HAS_NO_REAL_SDCARD := true
