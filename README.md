@@ -1,6 +1,6 @@
 # TWRP tree for SHARP Z2
 
->repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
+>repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
 
 >repo sync -j16
 
@@ -10,6 +10,6 @@
 
 >. build/envsetup.sh
 
->lunch
+>lunch omni_sharp_z2
 
 >make recoveryimage
