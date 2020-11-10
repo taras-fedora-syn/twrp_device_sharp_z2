@@ -28,3 +28,20 @@
 >lunch omni_sharp_z2-userdebug
 
 >make recoveryimage
+
+
+
+make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/system/xbin/zip', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj_arm/SHARED_LIBRARIES/libbmlutils_intermediates/teamwin'.  Stop.
+
+#### make failed to build some targets (06:19 (mm:ss)) ####
+
+@sharp:~/omni/out/target/product/sharp_z2/system$ mkdir xbin
+@sharp:~/omni/out/target/product/sharp_z2/system$ cd xbin
+@sharp:~/omni/out/target/product/sharp_z2/system/xbin$ nano zip
+k@sharp:~/omni/out/target/product/sharp_z2/system/xbin$ ls -a
+.  ..  zip
+@sharp:~/omni/out/target/product/sharp_z2/system/xbin$ cd
+@sharp:~$ cd omni
+@sharp:~/omni$ . build/envsetup.sh
+including device/sharp/sharp_z2/vendorsetup.sh
+@sharp:~/omni$ lunch omni_sharp_z2-userdebug
