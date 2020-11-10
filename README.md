@@ -38,7 +38,7 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 @sharp:~/omni/out/target/product/sharp_z2/system$ mkdir xbin
 @sharp:~/omni/out/target/product/sharp_z2/system$ cd xbin
 @sharp:~/omni/out/target/product/sharp_z2/system/xbin$ nano zip
-k@sharp:~/omni/out/target/product/sharp_z2/system/xbin$ ls -a
+@sharp:~/omni/out/target/product/sharp_z2/system/xbin$ ls -a
 .  ..  zip
 @sharp:~/omni/out/target/product/sharp_z2/system/xbin$ cd
 @sharp:~$ cd omni
