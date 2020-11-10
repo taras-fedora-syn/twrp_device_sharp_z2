@@ -17,6 +17,6 @@
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
-$(call inherit-product, device/wileyfox/porridge/full_porridge.mk)
+$(call inherit-product, device/sharp/sharp_z2/full_sharp_z2.mk)
 
 PRODUCT_NAME := omni_sharp_z2
