@@ -5,10 +5,22 @@ LOCAL_PATH := device/sharp/sharp_z2
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
+# Device haves a combination of cortex a72 + cortex a53
+#2x Cortex-A72 @ 2.1GHz ~ 2.3GHz
+#4x Cortex-A53 @ 1.85GHz
+#4x Cortex-A53 @ 1.4GHz
 TARGET_CPU_SMP := true
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
+
 TARGET_CPU_CORTEX_A53 := true
 
 BOARD_HAS_MTK_HARDWARE := true
