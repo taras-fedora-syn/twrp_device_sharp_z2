@@ -21,7 +21,13 @@
 
 >make recoveryimage
 
-
+<>cd omni
+git clone https://github.com/omnirom/android_frameworks_native.git -b android-6.0
+git clone https://github.com/omnirom/android_frameworks_av.git -b android-6.0
+cp -a android_frameworks_native frameworks/native-caf
+cp -a android_frameworks_av frameworks/av-caf
+rm -rf android_frameworks_native
+rm -rf android_frameworks_av
 
 make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/system/xbin/zip', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj_arm/SHARED_LIBRARIES/libbmlutils_intermediates/teamwin'.  Stop.
 
