@@ -34,18 +34,27 @@ rm -rf android_frameworks_av
 <details> 
   <summary>make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/system/xbin/zip', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj_arm/SHARED_LIBRARIES/libbmlutils_intermediates/teamwin'.  Stop.</summary>
 cd omni
+  
 cd out/target/product/sharp_z2/system
+
 mkdir xbin
+
 cd xbin
+
 nano zip
+
 Ctrl+O
+
 Enter
+
 Ctrl+X
+
 cd
+
 cd omni
 </details>
 
-> . build/envsetup.sh
+>. build/envsetup.sh
 
 >lunch omni_sharp_z2-userdebug
 
