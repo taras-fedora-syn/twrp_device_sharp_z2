@@ -57,7 +57,7 @@
   cd omni
  
 </details>
-
+```` 
 >. build/envsetup.sh
 
 >lunch omni_sharp_z2-userdebug
