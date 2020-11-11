@@ -74,6 +74,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_NEVER_UNMOUNT_SYSTEM := true
+TW_NO_SCREEN_TIMEOUT := true
 
 # Encryption
 TW_INCLUDE_CRYPTO := true
