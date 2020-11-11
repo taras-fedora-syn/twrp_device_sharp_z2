@@ -36,12 +36,11 @@ cp -a android_frameworks_av frameworks/av
 rm -rf android_frameworks_native
 
 rm -rf android_frameworks_av
-
 </details>
- 
-make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/system/xbin/zip', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj_arm/SHARED_LIBRARIES/libbmlutils_intermediates/teamwin'.  Stop.
 
-#### make failed to build some targets (06:19 (mm:ss)) ####
+<details> 
+  <summary>make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/system/xbin/zip', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj_arm/SHARED_LIBRARIES/libbmlutils_intermediates/teamwin'.  Stop.</summary>
+  </details>
 
 >cd omni
 
