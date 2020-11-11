@@ -40,27 +40,26 @@ rm -rf android_frameworks_av
 
 <details> 
   <summary>make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/system/xbin/zip', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj_arm/SHARED_LIBRARIES/libbmlutils_intermediates/teamwin'.  Stop.</summary>
-  </details>
-
 >cd omni
 
->cd out/target/product/sharp_z2/system
+cd out/target/product/sharp_z2/system
 
->mkdir xbin
+mkdir xbin
 
->cd xbin
+cd xbin
 
->nano zip
+nano zip
 
->Ctrl+O
+Ctrl+O
 
- >Enter
+Enter
 
- >Ctrl+X
+Ctrl+X
 
->cd
+cd
 
->cd omni
+cd omni
+</details>
 
 >. build/envsetup.sh
 
@@ -68,7 +67,7 @@ rm -rf android_frameworks_av
 
 >make recoveryimage
 
-make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj/SHARED_LIBRARIES/libcryptfs_hw_intermediates/export_includes', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj/SHARED_LIBRARIES/libcryptfsfde_intermediates/import_includes'.  Stop.
+
 
 NONE
 >/omni/frameworks$ zip native native
