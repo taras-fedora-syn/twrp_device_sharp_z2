@@ -30,11 +30,12 @@
   rm -rf android_frameworks_native
   
   rm -rf android_frameworks_av
-  
+  ```
 </details>
 
 <details> 
   <summary>make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/system/xbin/zip', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj_arm/SHARED_LIBRARIES/libbmlutils_intermediates/teamwin'.  Stop.</summary>  
+  ```javascript
   cd omni
   
   cd out/target/product/sharp_z2/system
@@ -54,6 +55,7 @@
   cd
   
   cd omni
+  ```
 </details>
 
 >. build/envsetup.sh
