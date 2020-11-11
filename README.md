@@ -36,10 +36,9 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 >cd xbin
 
 >nano zip
-
-Ctrl+O
-Enter
-Ctrl+X
+##Ctrl+O
+##Enter
+##Ctrl+X
 
 >cd
 
