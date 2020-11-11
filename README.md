@@ -27,26 +27,15 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 
 #### make failed to build some targets (06:19 (mm:ss)) ####
 
-@sharp: /omni/out/target/product/sharp_z2/system$ mkdir xbin
-
-@sharp: /omni/out/target/product/sharp_z2/system$ cd xbin
-
-@sharp: /omni/out/target/product/sharp_z2/system/xbin$ nano zip
-
-@sharp: /omni/out/target/product/sharp_z2/system/xbin$ ls -a
-
-.  ..  zip
-@sharp: /omni/out/target/product/sharp_z2/system/xbin$ cd
-
-@sharp: $ cd omni
-
-@sharp: /omni$ . build/envsetup.sh
-
-including device/sharp/sharp_z2/vendorsetup.sh
-
-@sharp: /omni$ lunch omni_sharp_z2-userdebug
-
-
+>cd omni
+>cd out/target/product/sharp_z2/system
+>mkdir xbin
+>cd xbin
+>nano zip
+>cd 
+>cd omni
+>. build/envsetup.sh
+>lunch omni_sharp_z2-userdebug
 
 NONE
 >/omni/frameworks$ zip native native
