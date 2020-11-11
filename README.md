@@ -9,13 +9,13 @@
 
 >repo sync -j16
 
->~/omni/frameworks$ zip native native
+~/omni/frameworks$ zip native native
 
-~>rm -rf native
+~rm -rf native
 
 >cd
 
-~>cd omni
+>cd omni
 
 >git clone https://github.com/taras-fedora-syn/twrp_device_sharp_z2.git --single-branch device/sharp/sharp_z2
 
