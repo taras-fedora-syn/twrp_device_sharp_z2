@@ -16,6 +16,7 @@
 >git clone https://github.com/taras-fedora-syn/twrp_device_sharp_z2.git --single-branch device/sharp/sharp_z2
 <details>  
   <summary>frameworks</summary>
+  ````
   cd omni
   
   git clone https://github.com/omnirom/android_frameworks_native.git -b android-6.0
@@ -29,7 +30,6 @@
   rm -rf android_frameworks_native
   
   rm -rf android_frameworks_av
-  ```` 
 </details>
  
 <details> 
