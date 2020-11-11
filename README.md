@@ -22,7 +22,7 @@
 >make recoveryimage
 
 <details> 
-  <summary>
+  <summary>frameworks</summary>
 cd omni
 git clone https://github.com/omnirom/android_frameworks_native.git -b android-6.0
 git clone https://github.com/omnirom/android_frameworks_av.git -b android-6.0
