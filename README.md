@@ -53,6 +53,8 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 
 >make recoveryimage
 
+make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj/SHARED_LIBRARIES/libcryptfs_hw_intermediates/export_includes', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj/SHARED_LIBRARIES/libcryptfsfde_intermediates/import_includes'.  Stop.
+
 NONE
 >/omni/frameworks$ zip native native
 
