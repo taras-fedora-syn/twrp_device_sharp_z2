@@ -9,9 +9,9 @@
 
 >repo sync -j16
 
-~/omni/frameworks$ zip native native
+~ /omni/frameworks$ zip native native
 
-~rm -rf native
+~ rm -rf native
 
 >cd
 
@@ -19,9 +19,9 @@
 
 >git clone https://github.com/taras-fedora-syn/twrp_device_sharp_z2.git --single-branch device/sharp/sharp_z2
 
-~>export USE_NINJA=false
+~ export USE_NINJA=false
 
-~>export ALLOW_MISSING_DEPENDENCIES=true
+~ export ALLOW_MISSING_DEPENDENCIES=true
 
 >. build/envsetup.sh
 
@@ -36,12 +36,20 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 #### make failed to build some targets (06:19 (mm:ss)) ####
 
 @sharp: /omni/out/target/product/sharp_z2/system$ mkdir xbin
+
 @sharp: /omni/out/target/product/sharp_z2/system$ cd xbin
+
 @sharp: /omni/out/target/product/sharp_z2/system/xbin$ nano zip
+
 @sharp: /omni/out/target/product/sharp_z2/system/xbin$ ls -a
+
 .  ..  zip
 @sharp: /omni/out/target/product/sharp_z2/system/xbin$ cd
+
 @sharp: $ cd omni
+
 @sharp: /omni$ . build/envsetup.sh
+
 including device/sharp/sharp_z2/vendorsetup.sh
+
 @sharp: /omni$ lunch omni_sharp_z2-userdebug
