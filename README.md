@@ -45,7 +45,6 @@
 
 >make recoveryimage
 
-
 NONE
 
 >export USE_NINJA=false
