@@ -16,8 +16,9 @@
 >git clone https://github.com/taras-fedora-syn/twrp_device_sharp_z2.git --single-branch device/sharp/sharp_z2
 <details>  
   <summary>frameworks</summary>
-  <p>
+  ```javascript
   cd omni
+  
   git clone https://github.com/omnirom/android_frameworks_native.git -b android-6.0
   
   git clone https://github.com/omnirom/android_frameworks_av.git -b android-6.0
@@ -29,7 +30,8 @@
   rm -rf android_frameworks_native
   
   rm -rf android_frameworks_av
-</p></details>
+  ```
+</details>
 
 <details> 
   <summary>make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/system/xbin/zip', needed by '/home/fedirpolishchuk/omni/out/target/product/sharp_z2/obj_arm/SHARED_LIBRARIES/libbmlutils_intermediates/teamwin'.  Stop.</summary>  
