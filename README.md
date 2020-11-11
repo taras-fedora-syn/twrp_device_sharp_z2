@@ -30,7 +30,7 @@
   rm -rf android_frameworks_native
   
   rm -rf android_frameworks_av
-  ```
+  
 </details>
 
 <details> 
@@ -55,7 +55,7 @@
   cd
   
   cd omni
-  ```
+ 
 </details>
 
 >. build/envsetup.sh
