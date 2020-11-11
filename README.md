@@ -28,13 +28,21 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 #### make failed to build some targets (06:19 (mm:ss)) ####
 
 >cd omni
+
 >cd out/target/product/sharp_z2/system
+
 >mkdir xbin
+
 >cd xbin
+
 >nano zip
->cd 
+
+>cd
+
 >cd omni
+
 >. build/envsetup.sh
+
 >lunch omni_sharp_z2-userdebug
 
 NONE
