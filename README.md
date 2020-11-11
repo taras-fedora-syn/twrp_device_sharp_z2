@@ -37,11 +37,11 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 
 >nano zip
 
-## Ctrl+O
+ Ctrl+O
 
-## Enter
+ Enter
 
-## Ctrl+X
+ Ctrl+X
 
 >cd
 
