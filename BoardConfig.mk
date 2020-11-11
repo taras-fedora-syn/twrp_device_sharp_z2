@@ -58,11 +58,11 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # TWRP FLAGS
 TW_THEME := portrait_hdpi
 TW_DEVICE_VERSION := taras-fedora-syn
-BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
+TW_MAX_BRIGHTNESS := 255
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
+TW_EXCLUDE_SUPERSU := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_NO_EXFAT_FUSE := true
-TW_NO_EXFAT := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
