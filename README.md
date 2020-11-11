@@ -37,6 +37,10 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 
 >nano zip
 
+Ctrl+O
+Enter
+Ctrl+X
+
 >cd
 
 >cd omni
@@ -44,6 +48,8 @@ make: *** No rule to make target '/home/fedirpolishchuk/omni/out/target/product/
 >. build/envsetup.sh
 
 >lunch omni_sharp_z2-userdebug
+
+>make recoveryimage
 
 NONE
 >/omni/frameworks$ zip native native
