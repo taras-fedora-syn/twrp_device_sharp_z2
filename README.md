@@ -3,7 +3,7 @@
 
 >cd omni
 
->git config --global user.name "you name" && git config --global user.email 
+>git config --global user.name "you name" && git config --global user.email "you email"
 
 >repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
 
