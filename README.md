@@ -1,3 +1,19 @@
+Installing Repo
+mkdir ~/bin
+PATH=~/bin:$PATH
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+
+mkdir foldername
+
+cd
+
+chmod -R 777 foldername  ------------------------------- R/W FOLDER
+
+
+
+
+
 # TWRP tree for SHARP Z2
 >mkdir omni
 
