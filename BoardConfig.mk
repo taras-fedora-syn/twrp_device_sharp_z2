@@ -71,7 +71,6 @@ TW_NO_SCREEN_TIMEOUT := true
 
 # Encryption
 TW_INCLUDE_CRYPTO := true
-TARGET_HW_DISK_ENCRYPTION := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata"
 TW_CRYPTO_MNT_POINT := "/data"
