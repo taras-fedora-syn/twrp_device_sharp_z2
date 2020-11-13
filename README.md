@@ -38,6 +38,8 @@
 
 >make recoveryimage
 
+recovery.img -------- make completed successfully!
+
 ##### No need
 <details>  
   <summary>frameworks</summary>
