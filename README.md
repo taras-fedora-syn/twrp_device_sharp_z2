@@ -1,6 +1,6 @@
 # TWRP tree for SHARP Z2
 
-### Installing Repo
+#### Installing Repo
 
 >mkdir ~/bin
 
@@ -18,7 +18,7 @@
 
 >cd omni
 
-## Download tree for SHARP Z2
+#### Download tree for SHARP Z2
 
 >git config --global user.name "you name" && git config --global user.email "you email"
 
@@ -38,7 +38,7 @@
 
 >make recoveryimage
 
-## NONE
+##### NONE
 <details>  
   <summary>frameworks</summary>
   cd omni
