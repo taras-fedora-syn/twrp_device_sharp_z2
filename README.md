@@ -38,7 +38,7 @@
 
 >make recoveryimage
 
-##### NONE
+##### no need
 <details>  
   <summary>frameworks</summary>
   cd omni
@@ -80,7 +80,7 @@
 </details>
  
 <details>  
-  <summary>NONE</summary>
+  <summary>no need</summary>
 
 >export USE_NINJA=false
 
