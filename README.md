@@ -1,4 +1,4 @@
-# Installing Repo
+### Installing Repo
 
 mkdir ~/bin
 
