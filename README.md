@@ -18,7 +18,7 @@
 
 >cd omni
 
-#### Download tree for SHARP Z2
+#### To initialize your local repository using the OMNIROM trees to build TWRP
 
 >git config --global user.name "you name" && git config --global user.email "you email"
 
