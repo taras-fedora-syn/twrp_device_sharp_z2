@@ -1,14 +1,18 @@
 Installing Repo
+
 mkdir ~/bin
+
 PATH=~/bin:$PATH
+
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
 chmod a+x ~/bin/repo
 
-mkdir foldername
+mkdir omni
 
 cd
 
-chmod -R 777 foldername  ------------------------------- R/W FOLDER
+chmod -R 777 omni  
 
 
 
