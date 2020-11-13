@@ -38,7 +38,7 @@
 
 >make recoveryimage
 
-##### No Need
+##### No need
 <details>  
   <summary>frameworks</summary>
   cd omni
