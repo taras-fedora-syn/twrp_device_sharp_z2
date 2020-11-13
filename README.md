@@ -41,6 +41,27 @@
 recovery.img -------- make completed successfully!
 
 ##################################################################################
+<details>  
+  <summary>TWRP Android 7.1</summary>
+
+>cd omni/bootable
+
+>git clone https://github.com/omnirom/android_bootable_recovery.git -b android-7.1
+
+>rm -rf recovery
+
+>mv android_bootable_recovery recovery
+
+>. build/envsetup.sh
+
+>lunch omni_sharp_z2-userdebug
+
+>make recoveryimage
+
+recovery.img -------- make completed successfully!
+</details>
+
+##################################################################################
 
 ##### No need sandbox
 <details>  
