@@ -52,6 +52,10 @@ recovery.img -------- make completed successfully!
 
 >mv android_bootable_recovery recovery
 
+>cd
+
+>cd omni
+
 >. build/envsetup.sh
 
 >lunch omni_sharp_z2-userdebug
