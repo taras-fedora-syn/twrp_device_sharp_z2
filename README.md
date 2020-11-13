@@ -79,10 +79,12 @@
   cd omni
 </details>
  
-NONE
+<details>  
+  <summary>NONE</summary>
 
 >export USE_NINJA=false
 
 >export ALLOW_MISSING_DEPENDENCIES=true
 
 minus TARGET_HW_DISK_ENCRYPTION = true  on BoardConfig.mk
+</details>
