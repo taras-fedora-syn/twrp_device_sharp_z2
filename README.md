@@ -84,7 +84,7 @@ NONE
 
 >export ALLOW_MISSING_DEPENDENCIES=true
 
-- TARGET_HW_DISK_ENCRYPTION = true
+minus TARGET_HW_DISK_ENCRYPTION = true  on BoardConfig.mk
 
 ###################################
 Install: /home/fedirpolishchuk/out/target/product/sharp_z2/recovery/root/sbin/exfat-fuse
