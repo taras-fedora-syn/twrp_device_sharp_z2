@@ -35,7 +35,8 @@
 >lunch omni_sharp_z2-userdebug
 
 >make recoveryimage
-##NONE
+
+## NONE
 <details>  
   <summary>frameworks</summary>
   cd omni
