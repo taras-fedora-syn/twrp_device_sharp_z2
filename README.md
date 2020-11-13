@@ -18,6 +18,8 @@
 
 >cd omni
 
+## Download tree for SHARP Z2
+
 >git config --global user.name "you name" && git config --global user.email "you email"
 
 >repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0
