@@ -1,31 +1,26 @@
+# TWRP tree for SHARP Z2
+
 ### Installing Repo
 
-mkdir ~/bin
+>mkdir ~/bin
 
-PATH=~/bin:$PATH
+>PATH=~/bin:$PATH
 
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+>curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 
-chmod a+x ~/bin/repo
+>chmod a+x ~/bin/repo
 
-mkdir omni
-
-cd
-
-chmod -R 777 omni  
-
-
-
-
-
-# TWRP tree for SHARP Z2
 >mkdir omni
+
+>cd
+
+>chmod -R 777 omni  
 
 >cd omni
 
 >git config --global user.name "you name" && git config --global user.email "you email"
 
->repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
+>repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0
 
 >repo sync -j16
 
@@ -34,6 +29,13 @@ chmod -R 777 omni
 >cd omni
 
 >git clone https://github.com/taras-fedora-syn/twrp_device_sharp_z2.git --single-branch device/sharp/sharp_z2
+
+>. build/envsetup.sh
+
+>lunch omni_sharp_z2-userdebug
+
+>make recoveryimage
+##NONE
 <details>  
   <summary>frameworks</summary>
   cd omni
@@ -74,11 +76,6 @@ chmod -R 777 omni
   cd omni
 </details>
  
->. build/envsetup.sh
-
->lunch omni_sharp_z2-userdebug
-
->make recoveryimage
 
 NONE
 
