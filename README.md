@@ -85,3 +85,10 @@ NONE
 >export USE_NINJA=false
 
 >export ALLOW_MISSING_DEPENDENCIES=true
+
+
+
+###################################
+Install: /home/fedirpolishchuk/out/target/product/sharp_z2/recovery/root/sbin/exfat-fuse
+Export includes file: hardware/libhardware/Android.mk -- /home/fedirpolishchuk/out/target/product/sharp_z2/obj/SHARED_LIBRARIES/libhardware_intermediates/export_includes
+make: *** No rule to make target '/home/fedirpolishchuk/out/target/product/sharp_z2/obj/SHARED_LIBRARIES/libcryptfs_hw_intermediates/export_includes', needed by '/home/fedirpolishchuk/out/target/product/sharp_z2/obj/SHARED_LIBRARIES/libcryptfsfde_intermediates/import_includes'.  Stop.
