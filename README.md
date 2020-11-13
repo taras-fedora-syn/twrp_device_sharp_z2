@@ -40,7 +40,7 @@
 
 recovery.img -------- make completed successfully!
 
-##### No need
+##### No need sandbox
 <details>  
   <summary>frameworks</summary>
   cd omni
