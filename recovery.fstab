@@ -7,8 +7,6 @@
 /protect_s          ext4    /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect2          flags=display="protect_s";backup=1  
 /nvdata             ext4    /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata            flags=display="nvdata";backup=1
 /metadata           emmc    /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata
-/hidden/data        ext4    /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cda  
-/hidden/emmc_hidden ext4    /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/hidden  
 /persistent         emmc    /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp  
 /nvram              emmc    /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram             flags=display="nvram";backup=1;flashimg=1
 /lk                 emmc    /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/lk                flags=display="uboot";backup=1;flashimg=1
