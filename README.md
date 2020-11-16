@@ -35,6 +35,20 @@
 >make recoveryimage
 
 recovery.img -------- make completed successfully!
+#################################################################################
+<details>  
+  <summary>download on MEGA</summary>
+
+>cd
+
+>sudo apt-get install ruby gem
+
+>sudo gem install rmega
+
+>cd ~/omni/out/target/product/sharp_z2
+
+>rmega-up recovery.img -u you@email
+</details>
 
 ##################################################################################
 <details>  
