@@ -26,10 +26,6 @@
 
 >repo sync -j16
 
->cd
-
->cd omni
-
 >git clone https://github.com/taras-fedora-syn/twrp_device_sharp_z2.git --single-branch device/sharp/sharp_z2
 
 >. build/envsetup.sh
