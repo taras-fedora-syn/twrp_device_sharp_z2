@@ -23,7 +23,9 @@
 >git config --global user.name "you name" && git config --global user.email "you email"
 
 >repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0
+
 OR
+
 >repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
 
 >repo sync -j16
