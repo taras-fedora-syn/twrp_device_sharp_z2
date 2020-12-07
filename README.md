@@ -127,3 +127,8 @@ recovery.img -------- make completed successfully!
 
 minus TARGET_HW_DISK_ENCRYPTION = true  on BoardConfig.mk
 </details>
+
+<details>  
+  <summary>Upgrade python 2.7 to 3.6 and 3.7 in Ubuntu</summary>
+https://rajputankit22.medium.com/upgrade-python-2-7-to-3-6-and-3-7-in-ubuntu-97d2727bf911
+</details>
