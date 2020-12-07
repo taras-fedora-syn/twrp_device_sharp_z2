@@ -73,6 +73,7 @@ TW_MTP_DEVICE := /dev/mtp_usb
 TW_DEVICE_VERSION := taras-fedora-syn
 TW_NEVER_UNMOUNT_SYSTEM := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+LZMA_RAMDISK_TARGETS := recovery
 
 # Encryption
 TW_INCLUDE_CRYPTO := true
