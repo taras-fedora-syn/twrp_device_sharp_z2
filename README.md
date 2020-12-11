@@ -125,6 +125,10 @@ recovery.img -------- make completed successfully!
 
 >export ALLOW_MISSING_DEPENDENCIES=true
 
+TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/batt_attr_text
+
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery/device/FG_Battery_CurrentConsumption"
+
 minus TARGET_HW_DISK_ENCRYPTION = true  on BoardConfig.mk
 </details>
 
