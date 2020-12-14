@@ -19,6 +19,4 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 $(call inherit-product, device/sharp/sharp_z2/full_sharp_z2.mk)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.rc,$(LOCAL_PATH)/recovery/root,recovery/root)
-
 PRODUCT_NAME := omni_sharp_z2
