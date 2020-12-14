@@ -35,6 +35,7 @@
 >make recoveryimage
 
 recovery.img -------- make completed successfully!
+
 #################################################################################
 <details>  
   <summary>download on MEGA</summary>
