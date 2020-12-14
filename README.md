@@ -77,7 +77,7 @@ recovery.img -------- make completed successfully!
 </details>
 
 ##################################################################################
-Upgrade python 2.7 to 3.6
+
 <details>  
   <summary>Upgrade python 2.7 to 3.6 and 3.7 in Ubuntu</summary>
 https://rajputankit22.medium.com/upgrade-python-2-7-to-3-6-and-3-7-in-ubuntu-97d2727bf911
